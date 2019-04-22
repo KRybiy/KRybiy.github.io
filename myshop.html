@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Shop</title>
 	<link rel="stylesheet" href="reset.css">
-	<link rel="stylesheet" href="myshop.css">
+	<link rel="stylesheet" href="myshop1.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,700" rel="stylesheet">
 </head>
 <body>
@@ -17,7 +17,7 @@
 					<nav>
 						<ul class="menu">
 							<li><a href=""> Home </a></li>
-							<li><a href=""> Products </a></li>
+							<li class="active"><a href=""> Products </a>
 							    <ul class="submenu">
 							    	<li><a href=""> Lorem ipsum dolor </a></li>
 							    	<li><a href=""> Sit amet </a></li>
@@ -26,24 +26,23 @@
 							    	<li><a href=""> Dolore magna aliqua </a></li>
 							    	<li><a href=""> Ut enim ad minim veniam </a></li>
 							    	<li><a href=""> Quis nostrud </a></li>
-							    </ul>
+							    	</li>
+							    </ul> 
 							<li><a href=""> Payment </a></li>
 							<li><a href=""> Shipping </a></li>
 						</ul>
 					</nav>
 				</div>
 			<div class="col-3">
-				<div class="searchbasket"><form action="" method="get">
+				<div class="searchbasket"><form action="" method="get" class="searchbutton">
  					 <input name="s" placeholder="search" type="search">
  						 <button type="submit"><img src="maket/search.png"></button>
 				</form> </div>
 				<div class="searchbasket">
-				<div class="basket"><img src="maket/basketb.png"> 
-					<div id="ex4">
-  <span class="p1 fa-stack fa-2x has-badge" data-count="4">
-        <i class="p3 fa fa-shopping-cart fa-stack-1x xfa-inverse" data-count="4b"></i>
-  </span>
-</div>
+
+							<div class="cart">
+						<div class="counter" id="products-count">0</div>
+					</div>
 
 				</div>
 			 </div></div>
@@ -51,10 +50,183 @@
 	</div>
 	</header>
 	<main>
-		<h1> main </h1>
-	</main>
+		<div class="slides"> <h1> Slides </h1> </div>
+		<div class="container"> 
+		<div class="clearleft">
+		<div class="filter"> 
+			
+				<p class="headline"> Device type </p>
+					<input type="checkbox" id="text">
+					<label for="text"> Laptop </label>
+					<input type="checkbox" id="text1">
+					<label for="text1"> Tablet </label>
+			
+			<div class="filterblocks">
+				<p class="headline"> Color </p>
+				<input type="checkbox" id="text2">
+				<label for="text2"> Black </label>
+				<input type="checkbox" id="text3">
+				<label for="text3"> Red </label>
+				<input type="checkbox" id="text4">
+				<label for="text4"> Green </label>
+				<input type="checkbox" id="text5">
+				<label for="text5"> Blue </label>
+				<input type="checkbox" id="text6">
+				<label for="text6"> Orange </label>
+			</div>
+			<div class="filterblocks">
+				<p class="headline"> Ram </p>
+				<input type="checkbox" id="text7">
+				<label for="text7"> 1GB </label>
+				<input type="checkbox" id="text8">
+				<label for="text8"> 2GB </label>
+				<input type="checkbox" id="text9">
+				<label for="text9"> 4GB </label>
+				<input type="checkbox" id="text10">
+				<label for="text10"> 6GB </label>
+				<input type="checkbox" id="text11">
+				<label for="text11"> 8GB </label>
+		</div>
+				<p class="options"> Show more options... </p>
+				<form>
+				<button class="filterbutton"> Submit </button> </form>
+		 </div>
+		<div class="col-9"> 
+			<a href="" class="whitehref"> Home page > </a>
+			<a href="" class="whitehref"> Products > </a>
+			<span class="whitehref"> Laptops and Tablets </span>
+			
+
+			<div class="col-9"> <div class="clearleft">
+				<div class="headline1"> Laptops and Tablets </div>
+				<nav class="sort">
+					<ul class="sort-menu"> 
+						<li><a href=""> sort by price </a>
+							<ul class="sub-sort-menu"> 
+								<li> <a href=""> sort by name </a></li>
+								<li> <a href=""> sort by date </a></li>
+								<li> <a href=""> sort by popularity </a></li> 
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div> </div>
+	<div class="row"> <div class="clearleft">
+	<div class="col-9-3"> 
+						<div class="imageplace"> <img src="maket/iconcomp.png"> <div class="border-image"></div> <div class="like-image"> </div></div>
+						<h1 class="devicename"> #1 Device Name </h1>
+						<div class="description"> Lorem ipsum dolor sit amet, consectetur adipisising elit. </div>
+						<div class="uppdes"> <span class="upp"> Type: </span> <span class="afterupp"> Laptop </span> </div>
+						<div class="uppdes"> <span class="upp"> Screen size: </span> <span class="afterupp"> 7 inches </span> </div>
+						<div class="uppdes"> <span class="upp"> Ram: </span> <span class="afterupp"> 1GB </span> </div>
+						<div class="price"> $599 <sup class="sup"> 25 </sup> </div>
+						
+				<button class="moredetails"> More details </button> 
+				<button class="addtocart"> <span class="forbasket"> Add to cart <span> </button>
+			
+		
+	</div>
+	<div class="col-9-3">  <div class="imageplace"> <img src="maket/iconblock.png"> <div class="border-image"></div> <div class="like-image"> </div> </div>
+						<h1 class="devicename"> #2 Device Name </h1>
+						<div class="description"> Lorem ipsum dolor sit amet, consectetur adipisising elit. </div>
+						<div class="uppdes"> <span class="upp"> Type: </span> <span class="afterupp"> Laptop </span> </div>
+						<div class="uppdes"> <span class="upp"> Screen size: </span> <span class="afterupp"> 7 inches </span> </div>
+						<div class="uppdes"> <span class="upp"> Ram: </span> <span class="afterupp"> 1GB </span> </div>
+						<div class="price"> $1250 <sup class="sup"> 99 </sup> </div>
+					
+				<button class="moredetails"> More details </button> 
+				<button class="addtocart"><span class="forbasket"> Add to cart </span></button>
+			
+</div>
+	<div class="col-9-3"> <div class="imageplace"> <img src="maket/iconclock.png"> <div class="border-image"></div> <div class="like-image"> </div> </div>
+						<h1 class="devicename"> #3 Device Name </h1>
+						<div class="description"> Lorem ipsum dolor sit amet, consectetur adipisising elit. </div>
+						<div class="uppdes"> <span class="upp"> Type: </span> <span class="afterupp"> Laptop </span> </div>
+						<div class="uppdes"> <span class="upp"> Screen size: </span> <span class="afterupp"> 7 inches </span> </div>
+						<div class="uppdes"> <span class="upp"> Ram: </span> <span class="afterupp"> 1GB </span> </div>
+						<div class="price"> $399 <sup class="sup"> 50 </sup> </div>
+					
+				<button class="moredetails"> More details </button> 
+				<button class="addtocart"><span class="forbasket"> Add to cart </span></button>
+			
+		</div>
+	<div class="col-9-3">  <div class="imageplace"> <img src="maket/iconlaptop.png">  <div class="border-image"></div> <div class="like-image"> </div></div>
+						<h1 class="devicename"> #4 Device Name </h1>
+						<div class="description"> Lorem ipsum dolor sit amet, consectetur adipisising elit. </div>
+						<div class="uppdes"> <span class="upp"> Type: </span> <span class="afterupp"> Laptop </span> </div>
+						<div class="uppdes"> <span class="upp"> Screen size: </span> <span class="afterupp"> 7 inches </span> </div>
+						<div class="uppdes"> <span class="upp"> Ram: </span> <span class="afterupp"> 1GB </span> </div>
+						<div class="price"> $599 <sup class="sup"> 25 </sup> </div>
+						
+				<button class="moredetails"> More details </button> 
+				<button class="addtocart"><span class="forbasket"> Add to cart </span></button>
+			 </div>
+	<div class="col-9-3">  <div class="imageplace"> <img src="maket/iconipod.png">  <div class="border-image"></div> <div class="like-image"> </div></div>
+						<h1 class="devicename"> #5 Device Name </h1>
+						<div class="description"> Lorem ipsum dolor sit amet, consectetur adipisising elit. </div>
+						<div class="uppdes"> <span class="upp"> Type: </span> <span class="afterupp"> Laptop </span> </div>
+						<div class="uppdes"> <span class="upp"> Screen size: </span> <span class="afterupp"> 7 inches </span> </div>
+						<div class="uppdes"> <span class="upp"> Ram: </span> <span class="afterupp"> 1GB </span> </div>
+						<div class="price"> $399 <sup class="sup"> 50 </sup> </div>
+						
+				<button class="moredetails"> More details </button> 
+				<button class="addtocart"><span class="forbasket"> Add to cart </span></button>
+			</div>
+	<div class="col-9-3">  <div class="imageplace"> <img src="maket/iconiphone.png">  <div class="border-image"></div> <div class="like-image"> </div></div>
+						<h1 class="devicename"> #6 Device Name </h1>
+						<div class="description"> Lorem ipsum dolor sit amet, consectetur adipisising elit. </div>
+						<div class="uppdes"> <span class="upp"> Type: </span> <span class="afterupp"> Laptop </span> </div>
+						<div class="uppdes"> <span class="upp"> Screen size: </span> <span class="afterupp"> 7 inches </span> </div>
+						<div class="uppdes"> <span class="upp"> Ram: </span> <span class="afterupp"> 1GB </span> </div>
+						<div class="price"> $1250 <sup class="sup"> 99 </sup> </div>
+						
+				<button class="moredetails"> More details </button> 
+				<button class="addtocart"><span class="forbasket"> Add to cart </span></button>
+			 </div>
+	<div class="col-9-3">  <div class="imageplace"> <img src="maket/iconipad.png">  <div class="border-image"></div> <div class="like-image"> </div></div>
+						<h1 class="devicename"> #7 Device Name </h1>
+						<div class="description"> Lorem ipsum dolor sit amet, consectetur adipisising elit. </div>
+						<div class="uppdes"> <span class="upp"> Type: </span> <span class="afterupp"> Laptop </span> </div>
+						<div class="uppdes"> <span class="upp"> Screen size: </span> <span class="afterupp"> 7 inches </span> </div>
+						<div class="uppdes"> <span class="upp"> Ram: </span> <span class="afterupp"> 1GB </span> </div>
+						<div class="price"> $599 <sup class="sup"> 25 </sup> </div>
+						
+				<button class="moredetails"> More details </button> 
+				<button class="addtocart"><span class="forbasket"> Add to cart </span></button>
+			</div>
+	<div class="col-9-3">  <div class="imageplace"> <img src="maket/iconblock.png">  <div class="border-image"></div> <div class="like-image"> </div></div>
+						<h1 class="devicename"> #8 Device Name </h1>
+						<div class="description"> Lorem ipsum dolor sit amet, consectetur adipisising elit. </div>
+						<div class="uppdes"> <span class="upp"> Type: </span> <span class="afterupp"> Laptop </span> </div>
+						<div class="uppdes"> <span class="upp"> Screen size: </span> <span class="afterupp"> 7 inches </span> </div>
+						<div class="uppdes"> <span class="upp"> Ram: </span> <span class="afterupp"> 1GB </span> </div>
+						<div class="price"> $1250 <sup class="sup"> 99 </sup> </div>
+						
+				<button class="moredetails"> More details </button> 
+				<button class="addtocart"><span class="forbasket"> Add to cart </span></button>
+		 </div>
+	<div class="col-9-3"> <div class="imageplace"> <img src="maket/iconclock.png"> <div class="border-image"></div> <div class="like-image"> </div> </div>
+						<h1 class="devicename"> #9 Device Name </h1>
+						<div class="description"> Lorem ipsum dolor sit amet, consectetur adipisising elit. </div>
+						<div class="uppdes"> <span class="upp"> Type: </span> <span class="afterupp"> Laptop </span> </div>
+						<div class="uppdes"> <span class="upp"> Screen size: </span> <span class="afterupp"> 7 inches </span> </div>
+						<div class="uppdes"> <span class="upp"> Ram: </span> <span class="afterupp"> 1GB </span> </div>
+						<div class="price"> $399 <sup class="sup"> 50 </sup> </div>
+						
+				<button class="moredetails"> More details </button> 
+				<button class="addtocart"><span class="forbasket"> Add to cart </span></button>
+			  </div> </span></span></button></div></div>
+			  <h1 class="loadmore"> Load more ...</h1>
+		</span></span></button></div>
+	</div> </div> 
+</div>
+
+</div>
+
+	</main>  
 	<footer>
-		<h1> footer </h1>
+		<h1 class="footer"> 	&#169; Copyright 2017 </h1>
 	</footer>
+	<script src="app.js"> </script>
 </body>
 </html>
